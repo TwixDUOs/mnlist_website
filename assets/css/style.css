@@ -1,0 +1,145 @@
+body {
+	background-color: #efefef;
+	margin: 0 auto;
+	width: 100%;
+	height: 100%;
+}
+
+p{
+	line-height: 1;
+}
+
+
+.main {
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+}
+
+pre {
+	margin: 0;
+}
+
+header {
+	font-family: 'Montserrat', regular;
+	width: 100%;
+	height: 100%;
+	font-size: 18px;
+	float: center;
+	margin-top: 40px;
+	text-align: center;
+}
+
+.logo {
+	height: 100%;
+	float: left;
+	margin-left: 2%;
+}
+
+.logo_image {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.nav_link {
+	display: inline-block;
+	vertical-align: top;
+	margin:  0 2%;
+	text-decoration: none;
+	transition: color 0.2s;
+	font-size: calc(1em + 1vw);
+	color: #000;
+}
+
+.nav_link:hover {
+	color: #e6ba38;
+}
+
+.shape {
+	vertical-align: top;
+	height: 83px;
+	width: 68px;
+	background-repeat: no-repeat;
+	margin-top: 0.5%;
+	float: right;
+}
+
+.shape_image {
+	max-width: 100%;
+	max-height: 100%;
+	margin-right: 50%;
+}
+
+.midle_photo {
+	width: 100%;
+	text-align: center;
+	background-image: url("../images/circle.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-position-y: 2%;
+	background-size: 35%;
+	position: absolute;
+	bottom: 0; 
+	right: 0;
+}
+.midle_circle_image {
+    z-index: 1;
+}
+
+.midle_human {
+	width: 21%;
+	height: 26%;
+    z-index: 5;
+	margin-left: 3%;
+	margin-top: 1%;
+	bottom: 0;
+}
+
+.midle_text {
+	font-family: 'Montserrat', Bold;
+	font-size: 6vw;
+	font-weight: 700;
+	position: absolute;
+	text-align: center;
+	margin-top: 9%;
+}
+
+.left_text {
+	position: absolute;
+	font-family: 'Montserrat', regular;
+	font-size: 1.5vw;
+	margin-left: 9%;
+	margin-top: 5%;
+	text-decoration: none;
+	transition: 0.5s linear;
+}
+
+.more_link {
+	text-decoration: none;
+	transition: 0.2s linear;
+}
+
+.more_link:hover {
+	color: #e6ba38;
+}
+
+.footer {
+	font-family: 'Montserrat', SemiBold;
+	position: absolute;
+	margin-left: 87%;
+	margin-top: 45%;
+}
+
+.footer_navigation {
+	position: absolute;
+	margin-top: 43%;
+	margin-left: 2%;
+}
+
+.footer_navigation_icon {
+	display: inline-block;
+	vertical-align: top;
+	margin:  0 3%;
+	width: 11%;
+	height: 11%;
+}

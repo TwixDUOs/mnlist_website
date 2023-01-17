@@ -13,21 +13,23 @@ header {
 	font-family: 'Montserrat', regular;
 	width: 100%;
 	height: 100%;
-	font-size: 18px;
+	font-size: 1.2vw;
 	float: center;
 	margin-top: 40px;
 	text-align: center;
 }
 
 .logo {
-	height: 100%;
+	width: 10vw;
+	height: 2.5vw;
+	margin-top: 0.5%;
 	float: left;
 	margin-left: 2%;
 }
 
 .logo_image {
-	max-width: 100%;
-	max-height: 100%;
+	width: 100%;
+	height: 70%;
 }
 
 .nav_link {
@@ -46,10 +48,11 @@ header {
 
 .shape {
 	vertical-align: top;
-	height: 83px;
-	width: 68px;
+	height: 3%;
+	width: 2%;
 	background-repeat: no-repeat;
 	margin-top: 0.5%;
+	margin-right: 3vw;
 	float: right;
 }
 
@@ -73,11 +76,11 @@ main {
 }
 
 .midle_human {
-	width: 21%;
-	height: 26%;
+	width: 20vw;
+	height: 45vw;
     z-index: 5;
-	margin-left: 3%;
-	margin-top: 1%;
+	margin-left: 1.5vw;
+	margin-top: 0.5vw;
 	bottom: 0;
 }
 
@@ -91,7 +94,7 @@ main {
 }
 
 .left_text {
-	position: absolute;
+	position: absolute; 
 	font-family: 'Montserrat', regular;
 	font-size: 1.5vw;
 	margin-left: 9%;
@@ -101,30 +104,31 @@ main {
 
 .more_link {
 	text-decoration: none;
-	transition: 0.2s linear;
 }
 
 .more_link:hover {
+	transition: 0.2s;
 	color: #e6ba38;
 }
 
 footer {
 	font-family: 'Montserrat', SemiBold;
+	font-size: 1.2vw;
 	position: absolute;
-	margin-left: 87%;
-	margin-top: 42%;
+	margin-left: 86vw;
+	bottom: 0.1vw; 
 }
 
 .footer_navigation {
 	position: absolute;
-	margin-top: 41%;
-	margin-left: 2%;
+	margin-left: 1vw;
+	bottom: 1vw; 
 }
 
 .footer_navigation_icon {
 	display: inline-block;
 	vertical-align: top;
-	margin:  0 3%;
-	width: 11%;
-	height: 11%;
+	margin:  0vw 1vw;
+	width: 4vw;
+	height: 4vw; 
 }

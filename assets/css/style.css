@@ -69,11 +69,12 @@ main {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-position-y: 2%;
-	background-size: 35%;
+	background-size: 40%;
 	position: absolute;
 	bottom: 0; 
 	right: 0;
 }
+
 
 .midle_human {
 	width: 20vw;
@@ -90,15 +91,16 @@ main {
 	font-weight: 700;
 	position: absolute;
 	text-align: center;
-	margin-top: 9%;
+	margin-top: 15%;
+	margin-left: 50%;
 }
 
 .left_text {
 	position: absolute; 
 	font-family: 'Montserrat', regular;
 	font-size: 1.5vw;
-	margin-left: 9%;
-	margin-top: 5%;
+	margin-left: 12%;
+	margin-top: 9%;
 	text-decoration: none;
 }
 
@@ -131,4 +133,74 @@ footer {
 	margin:  0vw 1vw;
 	width: 4vw;
 	height: 4vw; 
+}
+
+
+
+@media screen and (max-width: 1000px) {
+	.midle_human {
+		width: 60vw;
+		height: 120vw;
+		z-index: 5;
+		margin-left: 1.5vw;
+		margin-top: 0.5vw;
+		bottom: 0;
+	}
+
+	main {
+		width: 100%;
+		text-align: center;
+		background-image: url("../images/circle.png");
+		background-repeat: no-repeat;
+		background-position: center;
+		background-position-y: 2%;
+		background-size: 90%;
+		position: absolute;
+		bottom: 0; 
+		right: 0;
+	}
+
+	.slogan {
+		font-family: 'Montserrat', Bold;
+		font-size: 9vw;
+		font-weight: 700;
+		position: absolute;
+		text-align: center;
+		margin-top: 60%;
+		margin-left: 57%;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	.midle_human {
+		width: 60vw;
+		height: 120vw;
+		z-index: 5;
+		margin-left: 1.5vw;
+		margin-top: 0.5vw;
+		bottom: 0;
+	}
+
+	main {
+		width: 100%;
+		text-align: center;
+		background-image: url("../images/circle.png");
+		background-repeat: no-repeat;
+		background-position: center;
+		background-position-y: 2%;
+		background-size: 90%;
+		position: absolute;
+		bottom: 0; 
+		right: 0;
+	}
+
+	.slogan {
+		font-family: 'Montserrat', Bold;
+		font-size: 9vw;
+		font-weight: 700;
+		position: absolute;
+		text-align: center;
+		margin-top: 55%;
+		margin-left: 57%;
+	}
 }

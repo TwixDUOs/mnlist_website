@@ -10,13 +10,8 @@ p{
 }
 
 header {
-	font-family: 'Montserrat', regular;
-	width: 100%;
-	height: 100%;
 	font-size: 1.2vw;
-	float: center;
 	margin-top: 40px;
-	text-align: center;
 }
 
 .logo {
@@ -28,8 +23,18 @@ header {
 }
 
 .logo_image {
+	float: left;
 	width: 100%;
 	height: 70%;
+}
+
+.link {
+	position: absolute;
+	width: 80vw;
+	text-align: center;
+	margin-left: 10vw;
+	text-align: center;
+	float: right;
 }
 
 .nav_link {
@@ -41,26 +46,93 @@ header {
 	font-size: calc(1em + 1vw);
 	color: #000;
 	cursor: pointer;
+	font-family: 'Montserrat', regular;
 }
 
 .nav_link:hover {
 	color: #e6ba38;
 }
 
-.shape {
-	vertical-align: top;
-	height: 3%;
-	width: 2%;
-	background-repeat: no-repeat;
-	margin-top: 0.5%;
-	margin-right: 3vw;
+.gamburger{
 	float: right;
+	z-index: 50;
 }
 
-.shape_image {
-	max-width: 100%;
-	max-height: 100%;
-	margin-right: 50%;
+/* gamburger icon */
+.menu_shape-btn {
+	margin-left: 83vw;
+	position: relative;
+	width: 3vw;
+	height: 3vw;
+	overflow: hidden;
+	z-index: 2;
+}
+
+.menu_shape-btn span {
+	width: 30px;
+	height: 4px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #222222;
+	transition: all 0.5s;
+}
+
+.menu_shape-btn span:nth-of-type(2) {
+	top: calc(50% - 5px);
+}
+.menu_shape-btn span:nth-of-type(3) {
+	top: calc(50% + 5px);
+}
+
+.menu_shape-btn.active span:nth-of-type(1) {
+  display: none;
+}
+.menu_shape-btn.active span:nth-of-type(2) {
+  top: 50%;
+  transform: translate(-50%, 0%) rotate(45deg);  
+}
+.menu_shape-btn.active span:nth-of-type(3) {
+  top: 50%;
+  transform: translate(-50%, 0%) rotate(-45deg); 
+}
+
+/* Gamburger menu */
+.menu_shape {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #FFEFBA;
+	transform: translateX(-100%);
+	transition: transform 0.5s;
+}
+
+
+
+.gamburger_link {
+	position: absolute;
+	right: 3vw;
+}
+
+.gamburger_link:nth-child(1) {
+	margin-top: 7vw;
+}
+.gamburger_link:nth-child(3) {
+	margin-top: 9vw;
+}
+.gamburger_link:nth-child(5) {
+	margin-top: 11vw;
+}
+.gamburger_link:nth-child(7) {
+	margin-top: 13vw;
+}
+
+
+.menu_shape.active {
+	transform: translateX(0);
 }
 
 main {
@@ -126,6 +198,7 @@ footer {
 	position: absolute;
 	margin-left: 1vw;
 	bottom: 1vw; 
+	position: center;
 }
 
 .footer_navigation_icon {
@@ -136,6 +209,9 @@ footer {
 	height: 4vw; 
 }
 
+header {
+	display: flex;
+}
 
 
 @media screen and (max-width: 1000px) {
